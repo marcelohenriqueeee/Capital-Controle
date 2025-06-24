@@ -1,0 +1,162 @@
+/*GERAL*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background: #d9d9d9;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+/*CABEÇALHO E RESUMOS*/
+
+#cabecalho {
+  background: #025d43;
+  text-align: center;
+}
+span {
+  padding: 10px;
+  float: left;
+}
+#resumos {
+  padding: 60px;
+  margin-left: 8.5%;
+}
+
+.T-entradas,
+.T-saidas,
+.T-total,
+.T-investimentos,
+.T-pendente {
+  background: #cdcdcd;
+}
+
+.entradas,
+.saidas,
+.total,
+.investimentos,
+.pendente {
+  background: #cdcdcd;
+  font-size: 20px;
+  border-radius: 6px;
+  font-weight: 550;
+  padding: 40px;
+  margin-left: 30px;
+}
+.entradas {
+  color: #025d43;
+}
+.saidas {
+  color: #ce0000;
+}
+.investimentos {
+  color: rgb(0, 82, 158);
+}
+.pendente {
+  color: #485954;
+}
+
+.clear {
+  clear: both;
+}
+
+/*FORM DE RESGISTROS*/
+
+#new-registration {
+  padding: 20px;
+  margin-top: 40px;
+}
+#form-new-registration {
+  margin-left: 18%;
+}
+.div-desc,
+.div-valor,
+.div-data,
+.div-tipo {
+  float: left;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.btn-incluir {
+  background: #025d43;
+  color: white;
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 40px;
+  margin-top: 5px;
+  width: 100px;
+}
+.btn-incluir:hover {
+  cursor: pointer;
+  background: #02533c;
+}
+input {
+  border: 2px solid #a3a3a3;
+  border-radius: 4px;
+  padding: 4px;
+}
+select {
+  border: 2px solid #a3a3a3;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+/*FORM DE EDIÇÃO DE RESGISTROS*/
+
+#div-form-edit {
+  border: 2px solid #a3a3a3;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 40.5%;
+  margin-top: 140px;
+  padding: 20px;
+}
+#form-edit-registros {
+  border: 2px solid #a3a3a3;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 18px;
+}
+
+.edit-div-desc,
+.edit-div-valor,
+.edit-div-data,
+.edit-div-tipo {
+  margin-top: 35px;
+}
+label {
+  margin-left: 17px;
+}
+.btn-update {
+  background: #025d43;
+  color: white;
+  margin-top: 35px;
+  margin-left: 23%;
+  width: 60%;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-update:hover {
+  cursor: pointer;
+  background: #02533c;
+}
+
+/*TABELA DE REGSITROS*/
+
+.table {
+  margin-left: 22%;
+  margin-top: 35px;
+}
+th,
+tr,
+td {
+  border: 1px solid #a3a3a3;
+  text-align: center;
+  padding: 5px;
+  width: 180px;
+}

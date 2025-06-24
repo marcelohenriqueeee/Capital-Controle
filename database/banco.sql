@@ -1,0 +1,21 @@
+CREATE DATABASE open_finance;
+USE open_finance;
+
+CREATE TABLE `open_finance`.`tb_registros` (
+  `ID` INT NOT NULL AUTO_INCREMENT,
+  `DESCRICAO` VARCHAR(45) NOT NULL,
+  `VALOR` DECIMAL(10,2) NOT NULL,
+  `TIPO` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`ID`));
+  
+ALTER TABLE `open_finance`.`tb_registros` 
+CHANGE COLUMN `DESCRICAO` `DESC` VARCHAR(45) NOT NULL ;
+
+ALTER TABLE `open_finance`.`tb_registros` 
+CHANGE COLUMN `DESC` `DESCRICAO` VARCHAR(45) NOT NULL ;
+
+ALTER TABLE `open_finance`.`tb_registros` 
+ADD COLUMN `TIPO` VARCHAR(45) NOT NULL AFTER `DATA`;
+
+ALTER TABLE `open_finance`.`tb_registros` 
+CHANGE COLUMN `DATA` `DAT` DATE NOT NULL 
