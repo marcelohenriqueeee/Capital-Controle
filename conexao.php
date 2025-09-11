@@ -2,7 +2,7 @@
 
 $locahost = 'localhost';
 $username = 'root';
-$password = 'sua_senha';
+$password = '';
 $dbname = 'open_finance';
 
 $conn = new mysqli($locahost, $username, $password, $dbname);
