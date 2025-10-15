@@ -1,4 +1,3 @@
-
 <?php
 
 include 'conexao.php';
@@ -25,9 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Open Finance</title>
+    <title>Capital Controle</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
     
 </head>
 <body>
@@ -39,6 +40,10 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                 </a>
             </div>
         </nav>
+
+        <br>
+
+        <hr>
 
         <div id="resumos">
 
@@ -77,7 +82,10 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                     $saidas = $resultSaidas -> fetch_assoc();
                     $totalSaidas = $saidas['TOTAL'] ?? 0;
 
-                    echo 'R$ ' .number_format($totalSaidas,2, ',' , '.');
+                    
+                  
+
+                    echo 'R$ ' .number_format(($totalSaidas),2, ',' , '.');
                     
                     ?>
 
@@ -249,7 +257,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                                         
                                                 <a class='icon-positivo'> 
                                                 
-                                                     <img src='image/entrada.png' width='' height='32' alt='' />
+                                                     <img src='image/entrada.png' width='' height='25' alt='' />
                                                 
                                                 </a>
                                     
@@ -263,7 +271,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                                         
                                                 <a class='icon-investimento'> 
                                                 
-                                                    <img src='image/investimento.png' width='' height='32' alt='' />
+                                                    <img src='image/investimento.png' width='' height='25' alt='' />
                                                 
                                                 </a>
                                 
@@ -277,7 +285,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                                         
                                                 <a class='icon-pendente'> 
                                                 
-                                                    <img src='image/pendente.png' width='' height='32' alt='' />
+                                                    <img src='image/pendente.png' width='' height='25' alt='' />
                                                 
                                                 </a>
                                 
@@ -291,7 +299,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
                                         
                                                 <a class='icon-negativo'> 
                                                 
-                                                    <img src='image/saida.png' width='' height='32' alt='' />
+                                                    <img src='image/saida.png' width='' height='25' alt='' />
                                                 
                                                 </a>
                                 

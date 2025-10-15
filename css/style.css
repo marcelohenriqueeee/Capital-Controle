@@ -1,36 +1,62 @@
-/*GERAL*/
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  background: #d9d9d9;
-  box-sizing: border-box;
   font-family: Montserrat;
+  font-size: small;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+:root {
+  --color-back: #ffffff;
+  --green: #005d30;
+  --red: #e60000;
+  --purple: #545ee7;
+  --orange: #ed7e00;
+  --gray: #000000;
 }
 
 /*CABEÇALHO E RESUMOS*/
 
 #cabecalho {
-  background: #025d43;
-  text-align: center;
+  background-color: var(--color-back);
+}
+#cabecalho {
+  margin-top: 2rem;
 }
 span {
   padding: 10px;
   float: left;
 }
 #resumos {
-  padding: 60px;
-  margin-left: 8.5%;
+  margin-top: 3rem;
+  margin-left: 6rem;
 }
 
-.T-entradas,
-.T-saidas,
-.T-total,
-.T-investimentos,
+.T-entradas {
+  background-color: var(--green);
+  font-size: 1rem;
+}
+.T-saidas {
+  background-color: var(--red);
+  font-size: 1rem;
+}
+.T-total {
+  background-color: var(--purple);
+  font-size: 1rem;
+}
+.T-investimentos {
+  background-color: var(--purple);
+  font-size: 1rem;
+}
 .T-pendente {
-  background: #cdcdcd;
+  background-color: var(--orange);
+  font-size: 1rem;
+}
+.T-total {
+  background-color: var(--gray);
+  font-size: 1rem;
 }
 
 .entradas,
@@ -46,16 +72,24 @@ span {
   margin-left: 30px;
 }
 .entradas {
-  color: #025d43;
+  color: var(--color-back);
+  background-color: var(--green);
 }
 .saidas {
-  color: #ce0000;
+  color: var(--color-back);
+  background-color: var(--red);
 }
 .investimentos {
-  color: rgb(0, 82, 158);
+  color: var(--color-back);
+  background-color: var(--purple);
 }
 .pendente {
-  color: #485954;
+  color: var(--color-back);
+  background-color: var(--orange);
+}
+.total {
+  color: var(--color-back);
+  background-color: var(--gray);
 }
 
 .clear {
@@ -69,7 +103,7 @@ span {
   margin-top: 40px;
 }
 #form-new-registration {
-  margin-left: 18%;
+  margin-left: 11rem;
 }
 .div-desc,
 .div-valor,
@@ -106,50 +140,56 @@ select {
 
 /*FORM DE EDIÇÃO DE RESGISTROS*/
 
-#div-form-edit {
-  border: 2px solid #a3a3a3;
-  border-radius: 10px;
-  display: inline-block;
-  margin-left: 40.5%;
-  margin-top: 140px;
-  padding: 20px;
-}
 #form-edit-registros {
-  border: 2px solid #a3a3a3;
-  border-radius: 10px;
-  display: inline-block;
-  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .edit-div-desc,
 .edit-div-valor,
 .edit-div-data,
 .edit-div-tipo {
-  margin-top: 35px;
+  margin-top: 1rem;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
 }
 label {
   margin-left: 17px;
 }
+.T-edit {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
 .btn-update {
-  background: #025d43;
+  background: var(--green);
+  font-weight: 600;
   color: white;
   margin-top: 35px;
   margin-left: 23%;
-  width: 60%;
-  padding: 4px;
+  width: 20rem;
+  padding: 1rem;
   border: none;
   border-radius: 4px;
 }
 
 .btn-update:hover {
   cursor: pointer;
-  background: #02533c;
+  background: #004c27;
 }
 
 /*TABELA DE REGSITROS*/
 
 .table {
-  margin-left: 22%;
+  margin-left: 22rem;
   margin-top: 35px;
 }
 th,
@@ -157,6 +197,6 @@ tr,
 td {
   border: 1px solid #a3a3a3;
   text-align: center;
-  padding: 5px;
-  width: 180px;
+  padding: 2px;
+  width: 160px;
 }
